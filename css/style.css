@@ -137,6 +137,8 @@ section{
     background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office.jpg);
     background-color: #2E2F42;
     background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .title-list{
@@ -185,7 +187,11 @@ section{
 }
 
 .icon-contnent{
+    height: 112px;
     margin: 24px 102px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .icon-container {
@@ -293,18 +299,24 @@ section{
 }
 
 .social-list{
-    max-width: 232px;
-    margin-left: auto;
-    margin-right: auto;
     display: flex;
+    justify-content: center;
+    gap: 24px;
+}
+
+.social-list-a{
+    width: 40px;
+    height: 40px;
 }
 
 .social-list-link{
-    width: 40px;
-    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
     background-color: #4D5AE5;
     border-radius: 50%;
-    margin-right: 24px;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -313,7 +325,7 @@ section{
 }
 
 .social-list-icon{
-    fill: #ffffff;
+    fill: #f4f4fd;
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
     margin: 12px;
 }
@@ -344,6 +356,14 @@ section{
 .third-slider .third-slider-content{
     width: calc((100% - 48px) / 3);
     cursor: pointer;
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.third-slider-content:hover,
+.third-slider-content:focus{
+    box-shadow: 0px 2px 1px 0px #2E2F4214,
+                0px 1px 1px 0px #2E2F4229,
+                0px 1px 6px 0px #2E2F4214;
 }
 
 .wrapper-name-content{
@@ -383,19 +403,22 @@ section{
     overflow: auto;
     transition: transform 250ms ease-in-out;
     transform: translateY(100%);
-    background-color: #4D5AE5;
 }
 
 .third-slider-content:hover .overlay{
     transform: translateY(0%);
 }
 
-.overlay p{
+.app{
+    width: 100%;
+    height: 100%;
     font-weight: 400;
-    line-height: 24px;
-    letter-spacing: 1.5;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.2em;
     color: #F4F4FD;
-    padding: 40px 32px 164px 32px;
+    padding: 40px 32px;
+    background-color: #4D5AE5;
 }
 
 /*FOOTER*/
@@ -406,7 +429,7 @@ section{
 
 .wrapper-footer{
     display: flex;
-    gap: 102px;
+    align-items: baseline;
 }
 
 .logo-footer{
@@ -420,7 +443,6 @@ section{
     color: #4d5ae5;
     display: inline-block;;
     margin-bottom: 16px;
-    
 }
 
 .web-footer{
@@ -440,15 +462,21 @@ section{
 .footer-social{
     color: #ffffff;
     font-weight: 500;
-    line-height: 24px;
-    letter-spacing: 1.5;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.2em;
     margin-bottom: 16px;
 }
 
-.content-second .social-list{
-    margin: 0;
+.content-first{
+    margin-right: 120px;
 }
 
-.content-second .social-list-link{
-    margin-right: 16px;
+.content-second .social-list{
+    
+}
+
+.content-second .social-list-link:hover,
+.content-second .social-list-link:focus,{
+    background-color: #31d0aa;
 }
