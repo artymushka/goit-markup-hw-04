@@ -413,7 +413,7 @@ section{
     font-weight: 400;
     font-size: 16px;
     line-height: 1.5;
-    letter-spacing: 0.2em;
+    letter-spacing: 0.02em;
     color: #F4F4FD;
     padding: 40px 32px;
     background-color: #4D5AE5;
@@ -429,12 +429,12 @@ section{
     padding: 100px 0;
 }
 
-.wrapper-footer{
+.footer-wrap{
     display: flex;
     align-items: baseline;
 }
 
-.content-first {
+.first {
     margin-right: 120px;
 }
 
@@ -474,7 +474,12 @@ section{
     margin-bottom: 16px;
 }
 
-.content-second .social-list-link:hover,
-.content-second .social-list-link:focus{
+.second .social-list{
+    display: flex;
+    gap: 16px;
+}
+
+.second .social-list-link:hover,
+.second .social-list-link:focus{
     background-color: #31d0aa;
 }
